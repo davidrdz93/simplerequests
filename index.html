@@ -1,0 +1,17 @@
+<!doctype html>
+<html>
+	<head>
+	</head>
+	<body>
+		<script type="text/javascript" src="requests.js"></script>
+		<script>
+
+			let url = 'http://api.radionomy.com/currentsong.cfm?radiouid=dfe56c29-341c-4734-9e51-648f3a3a8671&apikey=a4e79699-61a6-4389-8cc1-d4e9aa284053&callmeback=yes&type=xml&cover=yes&previous=yes';
+
+			myRequest = new Request(url, 'GET', 'document');
+			myRequest.getResponse( (data) =>{
+				console.log(data);
+			});
+		</script>
+	</body>
+</html>
